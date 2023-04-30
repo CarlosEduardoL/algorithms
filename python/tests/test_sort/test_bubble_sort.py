@@ -1,5 +1,5 @@
 import unittest
-from bubble_sort import bubble_sort_in_place
+from sort.bubble_sort import bubble_sort_in_place
 
 
 class TestBubbleSort(unittest.TestCase):

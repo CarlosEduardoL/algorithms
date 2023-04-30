@@ -5,7 +5,7 @@ def bubble_sort_in_place(elements: list):
     elements from 0 to k (where k is n - the pass number), moving the biggest to the end.
     It has a worst-case time complexity of O(n^2).
 
-    :param elements: List of elements to sort
+    :param elements: List of elements to test_sort
     :raises TypeError: If `elements` is not a list.
     """
     # Ensure the input parameter is a list
@@ -36,7 +36,7 @@ def bubble_sort(elements: list) -> list:
     elements from 0 to k (where k is n - the pass number), moving the biggest to the end.
     It has a worst-case time complexity of O(n^2).
 
-    :param elements: List of elements to sort.
+    :param elements: List of elements to test_sort.
     :return: A sorted copy of the input list.
     """
     # Make a copy of the input list
@@ -45,7 +45,7 @@ def bubble_sort(elements: list) -> list:
     if len(elements_copy) <= 1:
         return elements_copy  # Early return if the list only has one or zero elements
 
-    # Sort the copy using the bubble sort algorithm
+    # Sort the copy using the bubble test_sort algorithm
     bubble_sort_in_place(elements_copy)
 
     return elements_copy
