@@ -11,7 +11,7 @@ import java.util.Collections
  *
  * @param elements The list of elements to sort
  */
-fun <T: Comparable<T>> bubbleSort(elements: List<T>) {
+fun <T: Comparable<T>> bubbleSort(elements: MutableList<T>) {
     // If the list has 1 or 0 elements, it is already sorted
     if (elements.size <= 1) return
 
