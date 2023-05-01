@@ -2,7 +2,7 @@ package sort
 
 import "golang.org/x/exp/constraints"
 
-// insertionSortInPlace sorts the input slice in ascending order using the Insertion Sort algorithm.
+// InsertionSortInPlace sorts the input slice in ascending order using the Insertion Sort algorithm.
 //
 // Insertion sort is a simple algorithm that sorts a list of items by repeatedly inserting each item into its correct
 // position within the sorted portion of the list. To do this, we compare the current item with the items to its left
@@ -11,7 +11,7 @@ import "golang.org/x/exp/constraints"
 // This process is repeated for each item in the list until they are all in their correct positions.
 //
 // Insertion Sort has a worst-case time complexity of O(n^2).
-func insertionSort[T constraints.Ordered](elements []T) {
+func InsertionSort[T constraints.Ordered](elements []T) {
 	if len(elements) <= 1 {
 		return
 	}

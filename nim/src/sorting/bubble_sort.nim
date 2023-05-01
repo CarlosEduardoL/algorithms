@@ -1,4 +1,4 @@
-type Greater[T] = concept x, y
+type Comparable[T] = concept x, y
   x > y is bool
 
 ## Sorts the input list in ascending order using the Bubble Sort algorithm in-place.
@@ -9,7 +9,7 @@ type Greater[T] = concept x, y
 ## :param elements: The array of elements to sort.
 ## :type elements: var openArray[T]
 ##
-proc bubble_sort*[T: Greater](elements: var openArray[T]) =
+proc bubble_sort*[T: Comparable](elements: var openArray[T]) =
   if elements.len <= 1: return
 
   let lastIdx: int = elements.len - 1

@@ -10,9 +10,9 @@ The main purpose of this repository is to provide implementations of these algor
 
 - [x] Bubble sort
 
-- [x] Merge Sort
+- [x] Insertion Sort
 
-- [ ] Insertion Sort
+- [x] Merge Sort
 
 - [ ] SHell Sort
 

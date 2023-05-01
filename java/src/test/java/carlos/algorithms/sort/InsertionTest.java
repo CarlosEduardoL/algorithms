@@ -7,10 +7,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BubbleTest extends SortTests {
+class InsertionTest extends SortTests {
 
     @Override
     void sort(List<Integer> elements) {
-        Bubble.sort(elements);
+        Insertion.sort(elements);
     }
 }

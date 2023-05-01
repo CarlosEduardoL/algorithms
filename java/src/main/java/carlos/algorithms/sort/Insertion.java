@@ -1,9 +1,8 @@
 package carlos.algorithms.sort;
 
-import java.util.Collections;
 import java.util.List;
 
-public final class Insert {
+public final class Insertion {
     /**
      * Sorts the input list in ascending order using the Insertion Sort algorithm.
      * Insertion sort is a simple algorithm that sorts a list of items by repeatedly
