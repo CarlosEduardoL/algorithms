@@ -10,11 +10,11 @@
 ///
 /// # Example
 ///
-/// ```
+/// ``
 /// let mut v = vec![3, 2, 1];
 /// bubble_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);
-/// ```
+/// ``
 pub fn bubble_sort<T: PartialOrd>(elements: &mut [T]) {
     // A slice with one or zero elements is always sorted.
     if elements.len() <= 1 {

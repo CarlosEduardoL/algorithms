@@ -16,11 +16,11 @@
 ///
 /// # Examples
 ///
-/// ```
+/// ``
 /// let mut v = vec![9, 7, 8, 2, 5];
-/// insertion_sort_in_place(&mut v);
+/// insertion_sort(&mut v);
 /// assert_eq!(v, [2, 5, 7, 8, 9]);
-/// ```
+/// ``
 pub fn insertion_sort<T: PartialOrd>(elements: &mut [T]) {
     // A Slice with one or zero elements is always sorted.
     if elements.len() <= 1 { return; }
