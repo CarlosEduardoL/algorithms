@@ -51,5 +51,7 @@ macro_rules! test_sort_function {
 
 pub mod bubble_sort;
 pub mod insertion_sort;
-pub mod merge_sort;
-mod shell_sort;
+pub mod shell_sort;
+pub mod mergesort;
+pub mod quicksort;
+pub mod parallel;

@@ -1,4 +1,6 @@
-mod sort;
+pub mod sort;
+pub mod collections;
+mod mem_utils;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
