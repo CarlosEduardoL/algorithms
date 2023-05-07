@@ -8,7 +8,7 @@
 - [Data Structures](#data-structures)
   - [Linear structures](#linear-structures)
   - [Non-linear structures](#non-linear-structures)
-- [Collections](#collections)
+  - [Collections](#collections)
 - [Languages](#languages)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
