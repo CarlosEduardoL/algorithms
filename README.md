@@ -93,7 +93,7 @@ If you would like to contribute to this project, you are welcome to do so! Here 
 
 1. Fork the repository
 2. Implement the new algorithm or add a new implementation of an existing algorithm in the language of your choice, following the directory structure and file naming conventions used in the repository.
-3. Write unit tests for your implementation and add them to the `tests` directory in the corresponding language subdirectory. The test file name should correspond to the implementation file name, with the suffix `_test` added. For example, if you add a new implementation of Bubble Sort in Rust called `bubble_sort.rs`, you should add a corresponding test file called `bubble_sort_test.rs` in the `tests` directory.
+3. Write unit tests for your implementation and add them to the `tests` directory in the corresponding language subdirectory. The test file name should correspond to the implementation file name, with the suffix `_test` added. However, keep in mind that the format of the test file name may vary depending on the programming language. Therefore, make sure to look up how to write unit tests in the specific language or consult the examples in the languages where examples are already available..
 4. Update the README.md file to include a description of your new algorithm or implementation, along with usage instructions and any other relevant information.
 5. Ensure that all existing unit tests still pass by running the test suite for the corresponding language. If any tests fail, fix the issue before submitting your pull request.
 6. Submit a pull request with your changes and a description of what you've added or changed.
