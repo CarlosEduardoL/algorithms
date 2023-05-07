@@ -3,8 +3,8 @@
 - [Introduction](#algorithms-and-data-structures-every-programmer-should-know)
 - [Algorithms](#algorithms)
 - [Sort Algorithms](#sort-algorithms)
-- [Searching](#searching)
-- [Graphs](#graphs)
+- [Searching Algorithms](#searching-algorithms)
+- [Graphs Algorithms](#graphs-lgorithms)
 - [Data Structures](#data-structures)
 - [Linear structures](#linear-structures)
 - [Non-linear structures](#non-linear-structures)
@@ -30,13 +30,13 @@ The main purpose of this repository is to provide implementations of these algor
 - **Shell Sort:** An in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort).
 - **Quick Sort**: An efficient sorting algorithm. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
 
-### Searching
+### Searching Algorithms
 
 - **Linear search**: A method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
 - **Binary search**: A search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
 - **Interpolation Search**: An algorithm for searching for a given key value in an indexed array that has been ordered by numerical values assigned to the keys (key values).
 
-### Graphs
+### Graphs Algorithms
 
 - **Breadth-first search**: An algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph) and explores all of the neighbor nodes at the present depth level before moving on to the nodes at the next depth level.
 - **Depth-first search**: An algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
@@ -55,7 +55,7 @@ The main purpose of this repository is to provide implementations of these algor
 
 - **Queues**: Elements are added to the end and removed from the beginning, following the “first in, first out” (FIFO) principle.
 
-### Non-linear structures: Elements are not organized in a linear sequence.
+### Non-linear structures
 
 - **Binary Trees**: A tree in which each node has at most two children.
 
@@ -63,7 +63,7 @@ The main purpose of this repository is to provide implementations of these algor
 
 - **Graphs**: Elements are organized as nodes connected by edges.
 
-### Collections: Elements are organized in a collection.
+### Collections
 
 - **Sets**: A collection of unique elements, i.e., there are no repeated elements.
 
