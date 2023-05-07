@@ -1,4 +1,4 @@
-# Groovy
+# [Groovy](https://groovy-lang.org/)
 
 This directory contains Groovy implementations of various algorithms and data structures.
 
@@ -51,7 +51,7 @@ This directory contains Groovy implementations of various algorithms and data st
 
 - [ ] Maps: A collection of key-value pairs where each key is unique.
 
-###
+### 
 
 ## Running Tests
 

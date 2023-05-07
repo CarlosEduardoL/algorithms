@@ -73,13 +73,13 @@ The main purpose of this repository is to provide implementations of these algor
 
 Currently, the following programming languages are supported:
 
-- Rust
-- Python
-- Nim
-- Go
-- Kotlin
-- Java
-- Groovy
+- [Rust](rust)
+- [Python](python)
+- [Nim](nim)
+- [Go](go)
+- [Kotlin](kotlin)
+- [Java](java)
+- [Groovy](groovy)
 
 ## Getting Started
 

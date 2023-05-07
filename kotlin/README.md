@@ -1,4 +1,4 @@
-# Kotlin
+# [Kotlin](https://kotlinlang.org/)
 
 This directory contains Kotlin implementations of various algorithms and data structures.
 
@@ -67,4 +67,4 @@ If you would like to contribute to this project, you are welcome to do so! Pleas
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.https://www.java.com/en/

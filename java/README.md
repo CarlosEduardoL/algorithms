@@ -1,4 +1,4 @@
-# Java
+# [Java](https://www.java.com/)
 
 This directory contains Java implementations of various algorithms and data structures.
 

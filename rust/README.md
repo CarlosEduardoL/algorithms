@@ -1,4 +1,4 @@
-# Rust
+# [Rust](https://www.rust-lang.org)
 
 This directory contains Rust implementations of various algorithms and data structures.
 

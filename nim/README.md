@@ -1,4 +1,4 @@
-# Nim
+# [Nim](https://nim-lang.org/)
 
 This directory contains Nim implementations of various algorithms and data structures.
 
