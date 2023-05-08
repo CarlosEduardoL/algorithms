@@ -37,7 +37,7 @@ This directory contains Kotlin implementations of various algorithms and data st
 
 - [ ] Queues: Elements are added to the end and removed from the beginning, following the “first in, first out” (FIFO) principle.
 
-### Non-linear structures**: Elements are not organized in a linear sequence.
+### Non-linear structures: Elements are not organized in a linear sequence.
 
 - [ ] Binary Trees: A tree in which each node has at most two children.
 
@@ -45,7 +45,7 @@ This directory contains Kotlin implementations of various algorithms and data st
 
 - [ ] Graphs: Elements are organized as nodes connected by edges.
 
-### Collections**: Elements are organized in a collection.
+### Collections: Elements are organized in a collection.
 
 - [ ] Sets: A collection of unique elements, i.e., there are no repeated elements.
 
@@ -67,4 +67,4 @@ If you would like to contribute to this project, you are welcome to do so! Pleas
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.https://www.java.com/en/
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
