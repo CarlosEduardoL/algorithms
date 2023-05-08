@@ -23,7 +23,7 @@
 /// # Examples
 ///
 /// ```
-/// use rust::sort::quicksort::quicksort;
+/// use algorithms::sort::quicksort::quicksort;
 /// let mut arr = [5, 2, 1, 4, 3];
 /// quicksort(&mut arr);
 /// assert_eq!(arr, [1, 2, 3, 4, 5]);

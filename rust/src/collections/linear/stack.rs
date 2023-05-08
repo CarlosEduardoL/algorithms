@@ -11,7 +11,7 @@ use crate::collections::linear::list::List;
 /// # Examples
 ///
 /// ```
-/// use rust::collections::linear::stack::Stack;
+/// use algorithms::collections::linear::stack::Stack;
 /// let mut stack = Stack::new();
 ///
 /// stack.push(1);

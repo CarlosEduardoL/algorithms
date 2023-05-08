@@ -17,7 +17,7 @@
 /// # Examples
 ///
 /// ```
-/// use rust::sort::insertion_sort::insertion_sort;
+/// use algorithms::sort::insertion_sort::insertion_sort;
 /// let mut v = vec![9, 7, 8, 2, 5];
 /// insertion_sort(&mut v);
 /// assert_eq!(v, [2, 5, 7, 8, 9]);

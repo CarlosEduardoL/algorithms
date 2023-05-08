@@ -49,6 +49,14 @@ macro_rules! test_sort_function {
     };
 }
 
+pub mod prelude {
+    pub use super::bubble_sort::bubble_sort;
+    pub use super::insertion_sort::insertion_sort;
+    pub use super::shell_sort::shell_sort;
+    pub use super::mergesort::merge_sort;
+    pub use super::quicksort::quicksort;
+}
+
 pub mod bubble_sort;
 pub mod insertion_sort;
 pub mod shell_sort;

@@ -20,7 +20,7 @@
 /// # Example
 ///
 /// ```
-/// use rust::sort::shell_sort::shell_sort;
+/// use algorithms::sort::shell_sort::shell_sort;
 /// let mut v = vec![3, 2, 1];
 /// shell_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);

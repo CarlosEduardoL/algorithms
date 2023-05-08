@@ -15,7 +15,7 @@
 /// # Example
 ///
 /// ```
-/// use rust::sort::parallel::mergesort::merge_sort;
+/// use algorithms::sort::parallel::mergesort::merge_sort;
 /// let mut v = vec![3, 2, 1];
 /// merge_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);

@@ -23,7 +23,7 @@
 /// # Examples
 ///
 /// ```
-/// use rust::sort::parallel::quicksort::quicksort;
+/// use algorithms::sort::parallel::quicksort::quicksort;
 /// let mut arr = [5, 2, 1, 4, 3];
 /// quicksort(&mut arr);
 /// assert_eq!(arr, [1, 2, 3, 4, 5]);

@@ -14,16 +14,16 @@ This directory contains Rust implementations of various algorithms and data stru
 
 ### Searching
 
-- [ ] Linear search: A method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
-- [ ] Binary search: A search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
-- [ ] Interpolation Search: An algorithm for searching for a given key value in an indexed array that has been ordered by numerical values assigned to the keys (key values).
+- [x] Linear search: A method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+- [x] Binary search: A search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
+- [x] Interpolation Search: An algorithm for searching for a given key value in an indexed array that has been ordered by numerical values assigned to the keys (key values).
 
 ### Graphs
 
-- [ ] Breadth-first search: An algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph) and explores all of the neighbor nodes at the present depth level before moving on to the nodes at the next depth level.
+- [ ] Breadth-first search: An algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph) and explores all the neighbor nodes at the present depth level before moving on to the nodes at the next depth level.
 - [ ] Depth-first search: An algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
 - [ ] Dijkstra’s Algorithm: An algorithm for finding the shortest paths between nodes in a graph. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
-- [ ] Bellman-Ford Algorithm: An algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.
+- [ ] Bellman-Ford Algorithm: An algorithm that computes shortest paths from a single source vertex to all the other vertices in a weighted digraph.
 
 ## Data Structures
 

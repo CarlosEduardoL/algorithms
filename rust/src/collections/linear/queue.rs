@@ -12,7 +12,7 @@ use crate::collections::linear::list::List;
 /// # Examples
 ///
 /// ```
-/// use rust::collections::linear::queue::Queue;
+/// use algorithms::collections::linear::queue::Queue;
 /// let mut queue = Queue::new();
 ///
 /// queue.enqueue(1);
