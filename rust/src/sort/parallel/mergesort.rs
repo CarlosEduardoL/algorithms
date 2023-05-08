@@ -14,19 +14,19 @@
 ///
 /// # Example
 ///
-/// ``
+/// ```
+/// use rust::sort::parallel::mergesort::merge_sort;
 /// let mut v = vec![3, 2, 1];
 /// merge_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);
-/// ``
-pub fn merge_sort<T: Clone + PartialOrd + Copy>(elements: &mut [T]) {
+/// ```
+pub fn merge_sort<T: Clone + PartialOrd + Copy + Send>(elements: &mut [T]) {
     if elements.len() <= 1 {return;}
     let mut merged = Vec::with_capacity(elements.len());
     let mid = elements.len()/2;
     // Split elements in two half
     let (left, right) = elements.split_at_mut(mid);
-    merge_sort(left);
-    merge_sort(right);
+    rayon::join(|| merge_sort(left), || merge_sort(right));
 
     // Merge the two sorted halves into a single sorted slice
     let (mut i, mut j) = (0, 0);

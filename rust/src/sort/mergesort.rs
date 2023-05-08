@@ -14,11 +14,12 @@
 ///
 /// # Example
 ///
-/// ``
+/// ```
+/// use rust::sort::mergesort::merge_sort;
 /// let mut v = vec![3, 2, 1];
 /// merge_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);
-/// ``
+/// ```
 pub fn merge_sort<T: Clone + PartialOrd + Copy>(elements: &mut [T]) {
     if elements.len() <= 1 {return;}
     let mut merged = Vec::with_capacity(elements.len());

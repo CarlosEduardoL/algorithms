@@ -22,11 +22,12 @@
 ///
 /// # Examples
 ///
-/// ``
+/// ```
+/// use rust::sort::quicksort::quicksort;
 /// let mut arr = [5, 2, 1, 4, 3];
 /// quicksort(&mut arr);
 /// assert_eq!(arr, [1, 2, 3, 4, 5]);
-/// ``
+/// ```
 pub fn quicksort<T: PartialOrd>(arr: &mut [T]) {
     // Base case: if the slice has length less than or equal to 1,
     // it is already sorted.

@@ -19,11 +19,12 @@
 ///
 /// # Example
 ///
-/// ``
+/// ```
+/// use rust::sort::shell_sort::shell_sort;
 /// let mut v = vec![3, 2, 1];
 /// shell_sort(&mut v);
 /// assert_eq!(v, vec![1, 2, 3]);
-/// ``
+/// ```
 pub fn shell_sort<T: PartialOrd>(elements: &mut [T]) {
     let len = elements.len();
     if len <= 1 { return; }

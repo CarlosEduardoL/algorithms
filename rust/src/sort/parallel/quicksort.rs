@@ -22,12 +22,13 @@
 ///
 /// # Examples
 ///
-/// ``
+/// ```
+/// use rust::sort::parallel::quicksort::quicksort;
 /// let mut arr = [5, 2, 1, 4, 3];
 /// quicksort(&mut arr);
 /// assert_eq!(arr, [1, 2, 3, 4, 5]);
-/// ``
-pub fn quicksort<T: PartialOrd>(arr: &mut [T]) {
+/// ```
+pub fn quicksort<T: PartialOrd + Send>(arr: &mut [T]) {
     // Base case: if the slice has length less than or equal to 1,
     // it is already sorted.
     if arr.len() <= 1 {
@@ -39,8 +40,7 @@ pub fn quicksort<T: PartialOrd>(arr: &mut [T]) {
 
     // Recursively sort the left and right sub-slices.
     let (left, right) = arr.split_at_mut(pivot_index);
-    quicksort(left);
-    quicksort(&mut right[1..]);
+    rayon::join(|| quicksort(left), || quicksort(&mut right[1..]));
 }
 
 /// Partitions a mutable slice of elements around a pivot element using

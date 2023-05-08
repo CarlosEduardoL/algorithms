@@ -1,13 +1,13 @@
 use crate::mem_utils::{alloc, dealloc};
 use std::{fmt, ptr};
 use std::ops::{Index, IndexMut};
-use crate::collections::list::List;
+use crate::collections::linear::list::List;
 
 /// Set the initial capacity of the ArrayList
 const INITIAL_CAPACITY: usize = 2 << 3;
 
 /// Define the ArrayList struct with a buffer pointer, capacity and length
-/// An array list is a dynamic array that can grow or shrink in size as needed.
+/// An array linear is a dynamic array that can grow or shrink in size as needed.
 /// It is implemented as an array with a fixed initial capacity that can be increased when the array becomes full
 pub struct ArrayList<T> {
     array: *mut T,
@@ -63,7 +63,7 @@ impl<T> ArrayList<T> {
 
 // Implement the List trait for ArrayList
 impl<T> List<T> for ArrayList<T> {
-    /// Add an element to the front of the list and has a time complexity of O(n) because it needs to
+    /// Add an element to the front of the linear and has a time complexity of O(n) because it needs to
     /// shift all existing elements to the right by one position to make room for the new element at the front.
     fn push_front(&mut self, data: T) {
         self.grow();
@@ -74,7 +74,7 @@ impl<T> List<T> for ArrayList<T> {
         self.len += 1;
     }
 
-    /// Add an element to the back of the list and has an amortized time complexity of O(1) because
+    /// Add an element to the back of the linear and has an amortized time complexity of O(1) because
     /// it adds the new element at the end of the array. However, if the array is full and needs to be resized, this operation can take O(n) time in the worst case.
     fn push_back(&mut self, data: T) {
         self.grow();
@@ -82,7 +82,7 @@ impl<T> List<T> for ArrayList<T> {
         self.len += 1;
     }
 
-    /// Remove and return the first element of the list and has a time complexity of O(n) because it
+    /// Remove and return the first element of the linear and has a time complexity of O(n) because it
     /// needs to shift all existing elements to the left by one position after removing the first element.
     fn pop_front(&mut self) -> Option<T> {
         let result = if self.is_empty() {
@@ -97,7 +97,7 @@ impl<T> List<T> for ArrayList<T> {
         result
     }
 
-    /// Remove and return the last element of the list and has a time complexity of O(1) because it
+    /// Remove and return the last element of the linear and has a time complexity of O(1) because it
     /// directly removes the last element in constant time.
     fn pop_back(&mut self) -> Option<T> {
         let result = if self.is_empty() {
@@ -111,13 +111,13 @@ impl<T> List<T> for ArrayList<T> {
         result
     }
 
-    /// Return the length of the list and has a time complexity of O(1) because they return the
+    /// Return the length of the linear and has a time complexity of O(1) because they return the
     /// value of the len field in constant time.
     fn len(&self) -> usize {
         self.len
     }
 
-    /// Check if the list is emptyand has a time complexity of O(1) because they return the
+    /// Check if the list is empty and has a time complexity of O(1) because they return the
     /// value of the len field in constant time.
     fn is_empty(&self) -> bool {
         self.len == 0
@@ -188,8 +188,8 @@ impl<'a, T> Iterator for ArrayListIter<'a, T> {
 
 #[cfg(test)]
 mod array_list_test {
-    use crate::collections::list::array_list::{ArrayList, INITIAL_CAPACITY};
-    use crate::collections::list::List;
+    use crate::collections::linear::array_list::{ArrayList, INITIAL_CAPACITY};
+    use crate::collections::linear::list::List;
 
     #[test]
     fn test_grow_shrink() {
