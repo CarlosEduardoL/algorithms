@@ -33,9 +33,9 @@ This directory contains Rust implementations of various algorithms and data stru
 
 - [x] Array Lists: A list implemented using an array that dynamically resizes as elements are added or removed.
 
-- [ ] Stacks: Elements are added and removed from the same end, following the “last in, first out” (LIFO) principle.
+- [x] Stacks: Elements are added and removed from the same end, following the “last in, first out” (LIFO) principle.
 
-- [ ] Queues: Elements are added to the end and removed from the beginning, following the “first in, first out” (FIFO) principle.
+- [x] Queues: Elements are added to the end and removed from the beginning, following the “first in, first out” (FIFO) principle.
 
 ### Non-linear structures**: Elements are not organized in a linear sequence.
 

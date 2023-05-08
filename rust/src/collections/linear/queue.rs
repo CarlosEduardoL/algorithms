@@ -24,6 +24,7 @@ use crate::collections::linear::list::List;
 /// assert_eq!(queue.dequeue(), Some(3));
 /// assert_eq!(queue.dequeue(), None);
 /// ```
+#[repr(transparent)]
 pub struct Queue<T> {
     list: LinkedList<T>,
 }
@@ -50,6 +51,19 @@ impl<T> Queue<T> {
     /// Time complexity: O(1)
     pub fn dequeue(&mut self) -> Option<T> {
         self.list.pop_front()
+    }
+
+    /// Returns a reference to the element at the front of the queue.
+    ///
+    /// Returns `None` if the queue is empty.
+    ///
+    /// Time complexity: O(1)
+    pub fn peek(&self) -> Option<&T> {
+        if self.len() > 0 {
+            Some(&self.list[0])
+        } else {
+            None
+        }
     }
 
     /// Returns the number of elements in the queue.

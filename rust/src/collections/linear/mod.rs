@@ -87,3 +87,4 @@ pub mod list;
 pub mod linked_list;
 pub mod array_list;
 pub mod queue;
+pub mod stack;

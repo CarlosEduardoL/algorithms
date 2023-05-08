@@ -3,7 +3,7 @@ use std::ptr;
 use crate::collections::linear::list::List;
 use crate::mem_utils::allocate;
 
-/// Each node in the linked linear contains some data and a pointer to the next node.
+/// Each node in the linked list contains some data and a pointer to the next node.
 struct Node<T> {
     data: T,
     next: *mut Node<T>, // raw pointer to the next node
@@ -16,8 +16,8 @@ impl<T> Node<T> {
     }
 }
 
-/// The linked linear struct contains a raw pointer to the head node, a raw pointer to the tail node,
-/// and the length of the linked linear.
+/// The linked list struct contains a raw pointer to the head node, a raw pointer to the tail node,
+/// and the length of the linked list.
 pub struct LinkedList<T> {
     head: *mut Node<T>,
     tail: *mut Node<T>,
@@ -25,7 +25,7 @@ pub struct LinkedList<T> {
 }
 
 impl<T> LinkedList<T> {
-    // Create a new linked linear with null pointers to the head and tail nodes and length 0.
+    // Create a new linked list with null pointers to the head and tail nodes and length 0.
     pub fn new() -> Self {
         LinkedList {
             head: ptr::null_mut(),
@@ -35,12 +35,12 @@ impl<T> LinkedList<T> {
     }
 }
 
-/// A linked linear is a linear data structure where each element is a separate object called a node.
-/// Each node contains a value and a reference to the next node in the linear.
+/// A linked list is a linear data structure where each element is a separate object called a node.
+/// Each node contains a value and a reference to the next node in the list.
 /// The first node is called the head and the last node is called the tail.
 /// Linked lists can be used to implement various abstract data types such as stacks, queues, and associative arrays.
 impl<T> List<T> for LinkedList<T> {
-    /// Adds an element to the front of the linear. Time complexity: O(1).
+    /// Adds an element to the front of the list. Time complexity: O(1).
     fn push_front(&mut self, data: T) {
         let raw_node = allocate(Node::new(data));
 
@@ -58,7 +58,7 @@ impl<T> List<T> for LinkedList<T> {
         }
     }
 
-    /// Adds an element to the back of the linear. Time complexity: O(1).
+    /// Adds an element to the back of the list. Time complexity: O(1).
     fn push_back(&mut self, data: T) {
         let raw_node = allocate(Node::new(data));
 
@@ -77,7 +77,7 @@ impl<T> List<T> for LinkedList<T> {
         }
     }
 
-    /// Removes and returns the first element of the linear. Time complexity: O(1).
+    /// Removes and returns the first element of the list. Time complexity: O(1).
     fn pop_front(&mut self) -> Option<T> {
         if self.head.is_null() {
             return None;
@@ -96,7 +96,7 @@ impl<T> List<T> for LinkedList<T> {
         Some(old_head.data)
     }
 
-    /// Removes and returns the last element of the linear. Time complexity: O(n).
+    /// Removes and returns the last element of the list. Time complexity: O(n).
     fn pop_back(&mut self) -> Option<T> {
         if self.tail.is_null() {
             return None;
@@ -109,7 +109,7 @@ impl<T> List<T> for LinkedList<T> {
         let mut prev = ptr::null_mut();
         let mut node = self.head;
 
-        // Traverse the linear to find the second-to-last node
+        // Traverse the list to find the second-to-last node
         while !unsafe { (*node).next.is_null() } {
             prev = node;
             node = unsafe { (*node).next };
