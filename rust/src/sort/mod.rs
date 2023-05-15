@@ -45,6 +45,17 @@ macro_rules! test_sort_function {
                 $sort_function(&mut elements);
                 assert_eq!(elements, [1, 2, 3, 3, 4, 5]);
             }
+
+            #[test]
+            fn sort_very_long_rand() {
+                use rand::Rng;
+                let mut rng = rand::thread_rng();
+                let mut elements: Vec<u32> = (0..10_000).map(|_| rng.gen_range(0..100)).collect();
+                let mut copy = elements.clone();
+                $sort_function(&mut elements);
+                copy.sort();
+                assert_eq!(elements, copy);
+            }
         }
     };
 }

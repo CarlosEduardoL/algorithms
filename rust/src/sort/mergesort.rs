@@ -21,13 +21,20 @@
 /// assert_eq!(v, vec![1, 2, 3]);
 /// ```
 pub fn merge_sort<T: Clone + PartialOrd + Copy>(elements: &mut [T]) {
-    if elements.len() <= 1 {return;}
+    if elements.len() <= 1<<5 {
+        return crate::sort::insertion_sort::insertion_sort(elements);
+    }
     let mut merged = Vec::with_capacity(elements.len());
+    merge_sort_helper(elements, &mut merged);
+}
+
+fn merge_sort_helper<T: Clone + PartialOrd + Copy>(elements: &mut [T], merged: &mut Vec<T>) {
+    if elements.len() <= 1 {return;}
     let mid = elements.len()/2;
     // Split elements in two half
     let (left, right) = elements.split_at_mut(mid);
-    merge_sort(left);
-    merge_sort(right);
+    merge_sort_helper(left, merged);
+    merge_sort_helper(right, merged);
 
     // Merge the two sorted halves into a single sorted slice
     let (mut i, mut j) = (0, 0);
@@ -43,6 +50,7 @@ pub fn merge_sort<T: Clone + PartialOrd + Copy>(elements: &mut [T]) {
     merged.extend_from_slice(&left[i..]);
     merged.extend_from_slice(&right[j..]);
     elements.copy_from_slice(&merged);
+    merged.clear();
 }
 
 test_sort_function!(merge_sort);

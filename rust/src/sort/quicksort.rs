@@ -57,7 +57,7 @@ pub fn quicksort<T: PartialOrd>(arr: &mut [T]) {
 /// After all elements have been processed, the pivot element is swapped with
 /// the element at index `i`. This places the pivot element at its final position
 /// in the sorted slice. The function then returns the index of the pivot element.
-fn partition<T: PartialOrd>(arr: &mut [T]) -> usize {
+fn partition<T: PartialOrd<T>>(arr: &mut [T]) -> usize {
     // Choose the last element as the pivot element.
     let pivot_index = arr.len() - 1;
     let mut i = 0;

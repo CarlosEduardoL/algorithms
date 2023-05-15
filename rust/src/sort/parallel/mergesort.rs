@@ -21,7 +21,9 @@
 /// assert_eq!(v, vec![1, 2, 3]);
 /// ```
 pub fn merge_sort<T: Clone + PartialOrd + Copy + Send>(elements: &mut [T]) {
-    if elements.len() <= 1 {return;}
+    if elements.len() <= 1<<5 {
+        return crate::sort::insertion_sort::insertion_sort(elements);
+    }
     let mut merged = Vec::with_capacity(elements.len());
     let mid = elements.len()/2;
     // Split elements in two half
