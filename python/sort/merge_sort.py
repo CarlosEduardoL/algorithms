@@ -1,4 +1,4 @@
-def merge_sort_in_place(elements: list) -> None:
+def merge_sort(elements: list) -> None:
     """
         Sorts the input list in ascending order using the Merge Sort algorithm.
 
@@ -20,8 +20,8 @@ def merge_sort_in_place(elements: list) -> None:
     mid = len(elements) // 2
     left = elements[:mid]
     right = elements[mid:]
-    merge_sort_in_place(left)
-    merge_sort_in_place(right)
+    merge_sort(left)
+    merge_sort(right)
 
     # Merge the two sorted halves into a single sorted list
     merged = []

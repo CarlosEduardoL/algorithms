@@ -9,8 +9,8 @@ This directory contains Python implementations of various algorithms and data st
 - [x] Bubble sort: A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
 - [x] Insertion Sort: A simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
 - [x] Merge Sort: An efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is preserved.
-- [ ] Shell Sort: An in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort).
-- [ ] Quick Sort: An efficient sorting algorithm. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
+- [x] Shell Sort: An in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort).
+- [x] Quick Sort: An efficient sorting algorithm. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
 
 ### Searching
 
@@ -29,9 +29,9 @@ This directory contains Python implementations of various algorithms and data st
 
 ### Linear structures
 
-- [ ] Linked Lists: A list in which each element is a node that contains a value and a reference to the next node in the list.
+- [x] Linked Lists: A list in which each element is a node that contains a value and a reference to the next node in the list.
 
-- [ ] Array Lists: A list implemented using an array that dynamically resizes as elements are added or removed.
+- [x] Array Lists: A list implemented using an array that dynamically resizes as elements are added or removed. (It’s not worth implementing it since Python doesn't have a concept of fixed-size arrays.)
 
 - [ ] Stacks: Elements are added and removed from the same end, following the “last in, first out” (LIFO) principle.
 
@@ -57,12 +57,6 @@ To run the tests for this project, you should first create a virtual environment
 
 ```bash
 python -m venv venv source venv/bin/activate
-```
-
-Next, you can install the required dependencies by running:
-
-```bash
-pip install -r requirements.txt
 ```
 
 Finally, you can run the tests by running:

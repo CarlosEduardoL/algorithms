@@ -1,4 +1,4 @@
-def insertion_sort_in_place(elements: list) -> None:
+def insertion_sort(elements: list) -> None:
     """
     Sorts the input list in ascending order using the Insertion Sort algorithm.
     Insertion sort is a simple algorithm that sorts a list of items by repeatedly inserting each item into
